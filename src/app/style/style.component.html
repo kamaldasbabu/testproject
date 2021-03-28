@@ -1,0 +1,6 @@
+<p>style works!{{num}}</p>
+
+<div [ngStyle]="{backgroundColor: getColor()}" 
+     [ngClass]="{online: serverStatus==='online'}">
+   ID: {{serverId}}<span>  serverStatus: {{getServerStatus()}}</span>
+</div>

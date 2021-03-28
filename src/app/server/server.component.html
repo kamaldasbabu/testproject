@@ -1,0 +1,24 @@
+<div class="container">
+
+    <h1>Hi this is Kamal Babu</h1>
+    <p>This is working</p>
+
+    <div> {{'Server'}} id is {{serverId}} status {{serverStatus}} </div> 
+    <!-- <button class="btn" [disabled] = "btnEnable">
+        ClickMe
+    </button> -->
+    <div [innerHTML] = "addText"></div>
+    <button class="btn" (click)="onBtnClick()">
+        ClickMe
+    </button>
+    <p [innerHTML] = "addBtnText"></p>
+
+    <p>Doller sign event</p>
+    <input type="text border-rounded" (input)="onUpdateServer($event)">
+    <input type="text" [(ngModel)]="onupdate2">
+    <p>{{onupdate}}</p><p>{{onupdate2}}</p>
+
+    <button clsss="btn btn-primary" (click)="ShowMessage()">Click to wish</button>
+    <P *ngIf="mesgShow">THIS IS THE {{addBtnText2}}</P>
+    <h1 class="text-center text-warning">Hi</h1>
+</div>
